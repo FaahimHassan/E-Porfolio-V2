@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* shared style */
+.font-open-sans{
+  font-family: "Open Sans", sans-serif;
+}
+
+.logo h2{
+  font-size: 45px;
+  font-weight: 900;
+}
+
+.color-orange{
+  color: #FD6E0A;
+}
+
+.btn{
+  background-color: #FD6E0A;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover{
+  background-color: green;
+}
+
+/* section heading */
+.section-heading{
+  max-width: 827px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.section-heading h2{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.section-heading p{
+  font-size: 18px;
+  color: #757575;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+/* ================= HEADER ================= */
+
+header{
+  background-color: #FFF8F3;
+  background: url("../images/developer.png"), url("../images/header_bg.png"), #FFF8F3;
+  background-position: 0 30%, bottom right;
+  background-repeat: no-repeat;
+  background-size: 6%, 60%;
+  padding-top: 50px;
+}
+
+/* NAVBAR */
+nav{
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .menu{
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+nav .menu a{
+  font-size: 18px;
+  color: #474747;
+  text-decoration: none;
+}
+
+/* ================= BANNER ================= */
+
+#banner{
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.banner-content{
+  max-width: 600px;
+}
+
+.banner-content h2{
+  font-size: 40px;
+  color: #474747;
+}
+
+.banner-content h1{
+  font-size: 60px;
+  margin: 15px 0;
+}
+
+.banner-content p{
+  font-size: 18px;
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+.banner-image img{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
+
+/* ================= ABOUT ================= */
+
+#about{
+  padding: 100px 20px;
+}
+
+.about-container{
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  background: #FFF8F3;
+  padding: 80px 30px;
+}
+
+.about-info{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.info-card p{
+  color: #757575;
+}
+
+/* ================= SKILLS ================= */
+
+#skills{
+  padding: 100px 20px;
+}
+
+.skills-container{
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.skills-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-card{
+  padding: 25px;
+  box-shadow: 0 6px 30px #0000001a;
+  max-width: 250px;
+  text-align: center;
+}
+
+.skill-card img{
+  max-width: 50px;
+  margin-bottom: 20px;
+}
+
+.skill-card p{
+  color: #757575;
+  line-height: 25px;
+}
+
+/* ================= RESUME ================= */
+
+#resume{
+  padding: 100px 20px;
+}
+
+.resume-container{
+  width: 90%;
+  max-width: 1140px;
+  margin: 50px auto;
+  display: flex;
+  gap: 40px;
+}
+
+/* two column equal */
+.education,
+.experience{
+  flex: 1;
+}
+
+/* section title */
+.section-title{
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #474747;
+}
+
+/* card */
+.resume-card{
+  margin-bottom: 20px;
+}
+
+.card-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card-info{
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+/* FIX: nested text */
+.card-text{
+  color: #757575;
+  line-height: 26px;
+}
+
+/* hr style */
+.resume-container hr{
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+/* ================= FOOTER FIX ================= */
+
+footer{
+  background-color: #FFF8F3;
+  padding: 80px 20px;
+}
+
+.footer-container{
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* left side */
+.footer-container .social{
+  flex: 1;
+}
+
+.footer-container .social p{
+  color: #757575;
+  margin-bottom: 20px;
+}
+
+/* icons */
+.icons a{
+  margin-right: 15px;
+}
+
+.icons img{
+  width: 30px;
+}
+
+/* right side form */
+.footer-container form{
+  flex: 1;
+}
+
+/* FIX: input responsive */
+.footer-container form input,
+.footer-container form textarea{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #f2f2f2;
+  font-size: 16px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* tablet */
+@media (max-width: 1024px){
+
+.resume-container{
+  flex-direction: column;
+}
+
+.footer-container{
+  flex-direction: column;
+}
+
+}
+
+/* mobile */
+@media (max-width: 768px){
+
+.resume-container{
+  flex-direction: column;
+}
+
+.footer-container{
+  flex-direction: column;
+}
+
+.section-title{
+  text-align: center;
+}
+
+}
