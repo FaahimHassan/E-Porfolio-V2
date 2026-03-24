@@ -236,12 +236,13 @@
 document.getElementById("contact-form").addEventListener("submit", function(e){
   e.preventDefault();
 
-  emailjs.sendForm("service_91lkx1k", "template_ps11pak", this)
+  emailjs.sendForm("service_inqsu41", "template_ajq13xh", this)
   .then(function(){
-    document.getElementById("success-msg").style.display = "block";
+    alert(" Message sent successfully!");
     document.getElementById("contact-form").reset();
-  }, function(error){
-    alert("Failed to send message!");
+  })
+  .catch(function(error){
+    alert(" Failed to send message!");
     console.log(error);
   });
 });
